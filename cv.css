@@ -1,0 +1,342 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4fb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  .resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+    .sidebar-left {
+    width: 260px;
+    background-color: #d8eff0;
+    padding: 25px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    color: #536e70;
+    font-size: 14px;
+    border-right: 2px solid #a5d5dc;
+  }
+
+  .profile-header {
+    background-color: #a5d5dc;
+    width: 47%;
+    padding: 35px 20px 35px 120px;
+    margin-bottom: 25px;
+    position: relative;
+    margin-left: 500px; ;
+  }
+  .profile-img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 95px;
+    height: 95px;
+    border-radius: 10000%;
+    object-fit: cover;
+    border: 3px solid #d8eff0;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 0.15);
+    background-color: white;
+  }
+  .profile-name {
+    font-weight: 700;
+    font-size: 27px;
+    color: #385455;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+  }
+  .profile-surname {
+    font-weight: 700;
+    font-size: 27px;
+    color: #385455;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .profile-tagline {
+    font-weight: 500;
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #4f6c70;
+    text-transform: uppercase;
+  }
+
+
+  .contact-section {
+    margin-bottom: 25px;
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #729ea1;
+    margin-bottom: 12px;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #33c9ce;
+    padding-bottom: 4px;
+  }
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #536e70;
+  }
+  .contact-list li svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    fill: #34b5bb;
+    flex-shrink: 0;
+  }
+
+ 
+  .skills-section ul {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #536e70;
+  }
+  .skills-section ul li {
+    margin-bottom: 6px;
+  }
+
+    .languages-list {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .languages-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    color: #536e70;
+  }
+ 
+  .language-dots {
+    display: flex;
+    gap: 4px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bcdae1;
+    border-radius: 50%;
+  }
+  .dot.active {
+    background-color: #34b5bb;
+  }
+
+
+  .cert-list {
+    font-size: 11px;
+    color: #536e70;
+    list-style-type: disc;
+    padding-left: 15px;
+    line-height: 1.3;
+  }
+  .cert-list li {
+    margin-bottom: 9px;
+  }
+
+  /* Main content section */
+  .main-content {
+    flex: 1;
+    padding: 25px 40px;
+    position: relative;
+  }
+
+  .section-block {
+    margin-bottom: 25px;
+  }
+  .section-heading {
+    font-size: 14.5px;
+    background-color: #dcedf0;
+    padding: 8px 18px;
+    color: #468e93;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    letter-spacing: 0.12em;
+    border-left: 5px solid #34b5bb;
+  }
+
+  .timeline {
+    border-left: 2px solid #34b5bb;
+    margin-left: 12px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .timeline-step {
+    position: relative;
+    margin-bottom: 18px;
+    padding-left: 25px;
+  }
+  .timeline-step:last-child {
+    margin-bottom: 0;
+  }
+
+  .step-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #95cdd2;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #5d9ca2;
+    position: absolute;
+    left: -37px;
+    top: 1px;
+    background: white;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+  }
+
+ 
+  .profile-text {
+    font-size: 13px;
+    color: #425a5d;
+    line-height: 1.45;
+    max-width: 570px;
+  }
+
+ 
+  .edu-block,
+  .exp-block {
+    font-size: 13px;
+    color: #425a5d;
+    line-height: 1.3;
+    max-width: 580px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 13.6px;
+    margin-bottom: 3px;
+    color: #317a80;
+  }
+  .edu-school {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: #3e666a;
+  }
+  .edu-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #629197;
+    float: right;
+    font-style: italic;
+  }
+  .edu-desc {
+    font-size: 11.7px;
+    color: #536e70;
+    margin-top: 3px;
+  }
+
+
+  .exp-company {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 2px;
+    color: #317a80;
+  }
+  .exp-location {
+    font-weight: 600;
+    font-size: 11.8px;
+    color: #629197;
+    font-style: italic;
+    float: right;
+  }
+  .exp-date {
+    font-size: 11.5px;
+    font-weight: 400;
+    color: #629197;
+    font-style: italic;
+    float: right;
+  }
+  .exp-list {
+    list-style: disc inside;
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #536e70;
+  }
+  .exp-list li {
+    margin-bottom: 4px;
+    font-size: 12.5px;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .edit-btn-wrap {
+    text-align: center;
+    margin-top: 27px;
+  }
+  .edit-btn {
+    background-color: #00c0c9;
+    border-radius: 5px;
+    border: none;
+    padding: 9px 26px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  .edit-btn:hover {
+    background-color: #039aa0;
+  }
+
+  
+  @media (max-width: 800px) {
+    .resume-container {
+      flex-direction: column;
+    }
+    .sidebar-left {
+      width: 100%;
+      border-right: none;
+      padding: 15px 25px 25px;
+    }
+    .main-content {
+      padding: 25px 25px 25px;
+    }
+    .profile-header {
+      width: 100%;
+      padding-left: 130px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .profile-img {
+      left: 25px;
+    }
+}
